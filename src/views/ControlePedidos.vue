@@ -19,6 +19,9 @@
               <p v-for="itemPizza in entrada.pizzaItemPedidos" v-bind:key="itemPizza.id">
                 {{ itemPizza.qtd }}× {{ itemPizza.pizza.nome }}
               </p>
+              <p v-for="itemBebida in confirmado.bebidaItemPedidos" v-bind:key="itemBebida.id">
+                {{ itemBebida.qtd }}× {{ itemBebida.bebida.nome }}
+              </p>
             </td>
             <td>{{ entrada.observacao}}</td>
             <td>R$ {{ calcularValorPedido(entrada) }}</td>
